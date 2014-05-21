@@ -5,6 +5,7 @@ permalink: /about/
 ---
 
 
-[Zinber's Blog](http://zinbers.github.io)
+Here is my blog.
+Thanks.
 
 
