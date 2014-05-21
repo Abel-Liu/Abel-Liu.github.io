@@ -5,6 +5,6 @@ permalink: /about/
 ---
 
 
-[Zinber's Blog](zinbers.github.io)
+[Zinber's Blog](http://zinbers.github.io)
 
 
