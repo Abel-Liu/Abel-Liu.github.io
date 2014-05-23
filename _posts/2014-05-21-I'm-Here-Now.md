@@ -2,7 +2,7 @@
 layout: post
 title:  "I'm Here Now!"
 date:   2014-05-21 20:19:51
-categories: test
+categories: common
 ---
 
 就算在这安家了，第一篇也算是个测试。
