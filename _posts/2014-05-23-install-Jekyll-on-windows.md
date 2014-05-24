@@ -6,9 +6,9 @@ categories: IT
 
 &emsp;&emsp;捣鼓了几天终于把博客搭出来了，之前不认识Jekyll，费劲查了很多资料，在此把我安装的过程和遇到的问题整理一下，做一个详细的教程，希望刚接触Jekyll且没头绪的同学们能省点事。
 
-说明：主要参考<a href="http://www.madhur.co.in/blog/2011/09/01/runningjekyllwindows.html">官方文档</a>和叶的一篇文章<a href="http://www.cnblogs.com/yevon/archive/2013/09/19/3310857.html">http://www.cnblogs.com/yevon/archive/2013/09/19/3310857.html</a>
+说明：主要参考<a href="http://www.madhur.co.in/blog/2011/09/01/runningjekyllwindows.html" target="_blank">官方文档</a>和叶的一篇文章<a href="http://www.cnblogs.com/yevon/archive/2013/09/19/3310857.html" target="_blank">http://www.cnblogs.com/yevon/archive/2013/09/19/3310857.html</a>
 
-* 从<a href="http://rubyinstaller.org/downloads/">这里</a>下载Ruby和Ruby Development Kit，注意32位和64位，两个要保持一致。
+* 从<a href="http://rubyinstaller.org/downloads/" target="_blank">这里</a>下载Ruby和Ruby Development Kit，注意32位和64位，两个要保持一致。
 * 安装Ruby并添加环境变量，例：C:\Ruby200-x64（安装过程中有自动添加环境变量的选项）
 * 解压DevKit到任意目录，例：C:\RubyDevKit
 * 打开CMD切换到DevKit目录下，运行命令<code>ruby dk.rb init</code>
@@ -78,7 +78,7 @@ jekyll serve       编译并开启本地服务
 
 #### 若需要代码高亮支持，请继续以下步骤。
 
-* 安装Portable Python（官方放推荐2.x版本，2.7.5以上，可从[这里](http://portablepython.com/wiki/PortablePython2.7.5.1/)下载)
+* 安装Portable Python（官方放推荐2.x版本，2.7.5以上，可从<a href="http://portablepython.com/wiki/PortablePython2.7.5.1/" target="_blank">这里</a>下载)
 * 添加环境变量，例：C:\Portable Python 2.7.5.1\App
 * 安装Pygments，运行命令<code>easy_install Pygments</code>
 
