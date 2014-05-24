@@ -154,10 +154,10 @@ a:visited { color: #205caa; }
 
 /* Home styles */
 /* ----------------------------------------------------------*/
-.home { padding:30px;background-color: #fff; box-shadow:0 2px 16px #ccc;}
+.home { padding:50px;background-color: #fff; box-shadow:0 2px 16px #ccc;}
 .home h1 { margin-bottom: 25px;}
 
-.post {padding:30px;  background-color: #fff; box-shadow:0 2px 16px #ccc;}
+.post {padding:50px;  background-color: #fff; box-shadow:0 2px 16px #ccc;}
 .posts { list-style-type: none; }
 
 .posts li { margin-bottom: 30px; }
