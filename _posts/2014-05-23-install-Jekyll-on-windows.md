@@ -151,7 +151,7 @@ toml (0.1.1)
 yajl-ruby (1.1.0)
 {% endhighlight %}
 
-若版本高于0.5.0需要手动安装低版本，输入以下命令安装：
+若版本高于0.5.0需要手动安装低版本，输入<code>gem install pygments.rb --version "=0.5.0"</code>命令安装。
 
 {% highlight console %}
 C:\>gem install pygments.rb --version "=0.5.0"
@@ -162,7 +162,7 @@ Installing ri documentation for pygments.rb-0.5.0
 1 gem installed
 {% endhighlight %}
 
-再卸载高版本（替换你对应的版本号）：
+再卸载高版本<code>gem uninstall pygments.rb --version "=0.5.4"</code>（替换你对应的版本号）。
 
 {% highlight console %}
 C:\>gem uninstall pygments.rb --version "=0.5.4"
