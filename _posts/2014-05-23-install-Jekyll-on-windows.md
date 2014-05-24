@@ -8,7 +8,7 @@ categories: IT
 
 说明：主要参考<a href="http://www.madhur.co.in/blog/2011/09/01/runningjekyllwindows.html">官方文档</a>和叶的一篇文章<a href="http://www.cnblogs.com/yevon/archive/2013/09/19/3310857.html">http://www.cnblogs.com/yevon/archive/2013/09/19/3310857.html</a>
 
-* 从<a href="">这里</a>下载Ruby和Ruby Development Kit，注意32位和64位，两个要保持一致。
+* 从<a href="http://rubyinstaller.org/downloads/">这里</a>下载Ruby和Ruby Development Kit，注意32位和64位，两个要保持一致。
 * 安装Ruby并添加环境变量，例：C:\Ruby200-x64（安装过程中有自动添加环境变量的选项）
 * 解压DevKit到任意目录，例：C:\RubyDevKit
 * 打开CMD切换到DevKit目录下，运行命令<code>ruby dk.rb init</code>
