@@ -18,6 +18,8 @@
   padding: 0;
 }
 
+.postcontent { line-height:25pt; }
+
 html, body { height: 100%; }
 
 body {
