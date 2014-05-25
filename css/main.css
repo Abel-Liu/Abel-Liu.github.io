@@ -373,11 +373,11 @@ a:hover   { text-decoration: underline; }
     position: fixed;
     z-index: 10;
     top: 14px; right: 8px;
-    background-color: white;
+    background-color: #6e6e6e;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    border: 1px solid #e8e8e8;
+    border: 1px solid #919191;
   }
 
   .site-nav .menu-icon {
