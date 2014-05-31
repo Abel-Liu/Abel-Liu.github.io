@@ -216,6 +216,7 @@ a:hover   { text-decoration: underline; }
 
 .post-content > * { margin: 20px 0; }
 
+.post-content a {white-space: pre-wrap; word-wrap: break-word;}
 
 .post-content h1,
 .post-content h2,
@@ -289,7 +290,7 @@ a:hover   { text-decoration: underline; }
 /* Syntax highlighting styles */
 /* ----------------------------------------------------------*/
 
-.highlight  { background: #ffffff; }
+.highlight  { background: #ffffff; white-space: pre-wrap; word-wrap: break-word; }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */
