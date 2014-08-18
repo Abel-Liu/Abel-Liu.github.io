@@ -1,4 +1,4 @@
-.title-desc {color:#999;font-size:14px;line-height:1.6em;}
+﻿.title-desc {color:#999;font-size:14px;line-height:1.6em;}
 
 /*
 .sidenav{
@@ -66,6 +66,7 @@ a:hover   { text-decoration: underline; }
   position: fixed;
   top: 0;
   width: 100%;
+  opacity: .9;
 }
 
 .site-title,
