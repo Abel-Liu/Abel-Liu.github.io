@@ -1,4 +1,4 @@
-﻿.title-desc {color:#999;font-size:14px;line-height:1.6em;}
+.title-desc {color:#999;font-size:14px;line-height:1.6em;}
 
 /*
 .sidenav{
@@ -27,7 +27,13 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
-  background-color: #e8e8e8;
+  background-color: #eee;
+/*
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../image/bg.jpg);
+*/
 }
 
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
@@ -166,18 +172,34 @@ a:hover   { text-decoration: underline; }
 
 .page-content {
   padding: 30px 0;
-  background-color: #e8e8e8;
+  background-color: #eee;
 }
 
 
 /* Home styles */
 /* ----------------------------------------------------------*/
-.mregion { margin-top:20px; padding:30px;background-color: #fff; box-shadow:0 2px 16px #ccc;}
+.mregion {
+  margin-top:20px;
+  padding:30px;
+  background-color: #fff;
+  box-shadow:0 2px 16px #ccc;
+}
 
-.home { margin-top:50px; padding:50px;background-color: #fff; box-shadow:0 2px 16px #ccc;}
+.home {
+  margin-top:50px;
+  padding:50px;
+  background-color: #fff;
+  box-shadow:0 2px 16px #ccc;
+}
+
 .home h1 { margin-bottom: 25px;}
 
-.post { margin-top:50px; padding:50px;  background-color: #fff; box-shadow:0 2px 16px #ccc;}
+.post {
+  margin-top:50px;
+  padding:50px;
+  background-color: #fff;
+  box-shadow:0 2px 16px #ccc;
+}
 .posts { list-style-type: none; }
 
 .posts li { margin-bottom: 30px; }
