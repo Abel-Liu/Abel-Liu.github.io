@@ -6,7 +6,7 @@ categories: IT
 
 ## Instructions
 
-* Download Python and Ruby from <a href="http://yunpan.cn/cgUMVmjZvjn6T" target="blank">here</a> (x64 only, Download Code:d0cb)
+* Download Python and Ruby from <a href="http://yunpan.cn/cgUMVmjZvjn6T" target="_blank">here</a> (x64 only, Download Code:d0cb)
 
 * Add Ruby&Python folder to PATH environment variable.For example:  
 
