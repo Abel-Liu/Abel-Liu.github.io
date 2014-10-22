@@ -11,4 +11,4 @@ username: "Abel-Liu"
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: /:categories/:year:month:day-:title.html
