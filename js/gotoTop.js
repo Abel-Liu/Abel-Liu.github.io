@@ -16,7 +16,8 @@
 				controlLeft = $window.width()- opts.pageWidthJg-$this.width();
 			}
 			var cssfixedsupport=$.browser.msie && parseFloat($.browser.version) < 7;//判断是否ie6
-			var controlTop=$window.height() - $this.height()-opts.pageHeightJg;
+			var controlTop = ($window.height() - $this.height()) * 0.831933;
+
 			controlTop=cssfixedsupport ? $window.scrollTop() + controlTop : controlTop;
 			var shouldvisible=( $window.scrollTop() >= opts.startline )? true : false;
 			
@@ -25,7 +26,7 @@
 			}else{
 				$this.stop().hide();
 			}
-			
+
 			$this.css({
 				position: cssfixedsupport ? 'absolute' : 'fixed',
 				top: controlTop,
