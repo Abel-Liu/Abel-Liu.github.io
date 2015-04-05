@@ -1,7 +1,6 @@
 ---
 layout: cubes
 ---
-
 <div style="margin-top:50px;">
   <ul class="posts">
     {% for post in site.posts %}
