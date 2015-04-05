@@ -2,7 +2,6 @@
 layout: cubes
 ---
 <div style="margin-top:50px;">
-<span style="display:none;">hello</span>
   <ul class="posts">
     {% for post in site.posts %}
       <li>
