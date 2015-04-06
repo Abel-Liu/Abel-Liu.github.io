@@ -4,17 +4,33 @@
 
   {% include head.html %}
 
-    <body>
+<body>
 
     {% include header.html %}
 
     <div class="page-content">
-      <div class="wrap">
-      {{ content }}
-      </div>
+        <div class="content-split">
+            <div class="wrap">
+                <div class="content-col-1 column">{{ content }}</div>
+                <div class="content-col-2 column">
+                    <div class="sidebar">
+                        <div class="category-header">Categories</div>
+                        <hr />
+                        <ul class="category-panel">
+                            <li>
+                                <a class="category-link" href="/life/">Life({{ site.categories.life.size }})</a>
+                            </li>
+                            <li>
+                                <a class="category-link" href="/it/">IT({{ site.categories.it.size }})</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     {% include footer.html %}
 
-    </body>
+</body>
 </html>

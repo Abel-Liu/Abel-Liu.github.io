@@ -18,6 +18,28 @@
   padding: 0;
 }
 
+.category-header {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #818181;
+}
+.category-panel { list-style-type: none; }
+.category-panel li { margin-top: 7px; }
+.category-link {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 2px;
+    padding-left: 7px;
+    position: relative;
+    display: block;
+}
+a.category-link:hover {
+  background-color: #C2B6A3;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
 .postcontent { line-height:25pt; }
 
 html, body { height: 100%; }
@@ -47,15 +69,14 @@ a:hover   { text-decoration: underline; }
 .wrap:after { content:""; display:table; }
 .wrap:after { clear: both; }
 .wrap {
-  max-width: 900px;
+  max-width: 1100px;
   padding: 0 30px;
   margin: 0 auto;
   zoom: 1;
 }
 
 .wrapcube {
-  max-width: 700px;
-  padding: 0 30px;
+  max-width: 800px;
   margin: 0 auto;
   zoom: 1;
 }
@@ -73,6 +94,7 @@ a:hover   { text-decoration: underline; }
   top: 0;
   width: 100%;
   box-shadow: 0 2px 16px #ccc;
+  z-index: 1;
 }
 
 .site-title,
@@ -113,6 +135,35 @@ a.page-link:hover {
   border-radius: 10px;
   text-decoration: none;
 }
+
+/* Content column */
+
+.sidebar{
+    margin-top:50px;
+    padding:10px;
+    background-color: #fff;
+    box-shadow:0 2px 16px #ccc;
+}
+
+.content-split .column { float: left; }
+
+.content-col-1 {
+  width: 800px; /*fallback*/
+  width: -webkit-calc(80% - 20px);
+  width: -moz-calc(80% - 20px);
+  width: -o-calc(80% - 20px);
+  width: calc(80% - 20px);
+  margin-right: 20px
+}
+
+.content-col-2 {
+  width: 200px; /*fallback*/
+  width: -webkit-calc(20%);
+  width: -moz-calc(20%);
+  width: -o-calc(20%);
+  width: calc(20%);
+}
+
 
 /* Site footer */
 
@@ -384,7 +435,6 @@ a.page-link:hover {
 /* media queries */
 /* ----------------------------------------------------------*/
 
-
 @media screen and (max-width: 750px) {
 
   .footer-col-1 { width: 50%; }
@@ -404,6 +454,11 @@ a.page-link:hover {
     clear: both;
   }
 
+  .content-split .column {
+    float: none;
+    clear: both;
+    width: auto;
+    margin: 0 0 15px; }
 }
 
 @media screen and (max-width: 600px) {
@@ -461,6 +516,7 @@ a.page-link:hover {
     float: none;
     clear: both;
     width: auto;
-    margin: 0 0 15px; }
+    margin: 0 0 15px; 
+  }
 
 }
