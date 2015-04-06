@@ -4,10 +4,10 @@
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="{{ site.description }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href='{{ "/css/main.css" | prepend: site.baseurl }}' />
 
     <style type="text/css">
     .demo{height:1400px; padding-top:100px}
@@ -22,14 +22,14 @@
     <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="/js/gotoTop.js"></script>
     <script type="text/javascript">
-    $(function(){
-	$(".backToTop").goToTop();
-	$(window).bind('scroll resize',function(){
-		$(".backToTop").goToTop({
-			pageWidth:960,
-			duration:200
-		});
-	});
-});
+        $(function(){
+	        $(".backToTop").goToTop();
+	        $(window).bind('scroll resize',function(){
+		        $(".backToTop").goToTop({
+			        pageWidth:960,
+			        duration:200
+		        });
+	        });
+        });
 </script>
 </head>
