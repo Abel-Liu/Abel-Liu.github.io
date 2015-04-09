@@ -95,6 +95,7 @@ a:hover   { text-decoration: underline; }
   width: 100%;
   box-shadow: 0 2px 16px #ccc;
   z-index: 1;
+  opacity: .9;
 }
 
 .site-title,
