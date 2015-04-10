@@ -2,7 +2,7 @@
 layout: post
 title:  "GitHub Pages不更新首页"
 date:   2015-04-05 17:00:00
-categories: IT
+categories: GitHub
 tags: [GitHub, index, 首页不更新]
 description: 奇葩BUG无处不在
 ---

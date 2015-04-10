@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Portable Jekyll"
-categories: IT
+categories: GitHub
+tags: [Jekyll, GitHub, Portable]
 ---
 
 ## Instructions

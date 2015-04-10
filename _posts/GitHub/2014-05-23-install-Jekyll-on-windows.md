@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Windows下搭建Jekyll教程"
-categories: IT
-tags: [Jekyll, Windows]
+categories: GitHub
+tags: [Jekyll, Windows, GitHub]
 ---
 
 &emsp;&emsp;捣鼓了几天终于把博客搭出来了，之前不认识Jekyll，费劲查了很多资料，在此把我安装的过程和遇到的问题整理一下，做一个详细的教程，希望刚接触Jekyll且没头绪的同学们能省点事。
