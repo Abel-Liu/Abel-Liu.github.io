@@ -13,6 +13,17 @@
             <div class="wrap">
                 <div class="content-col-1 column">{{ content }}</div>
                 <div class="content-col-2 column">
+                    <div class="sidebar" style="background:none;">
+                        <div id="qrcode" style="text-align:center;"></div>
+                        <script>
+                            $('#qrcode').qrcode({
+                                text: window.location.href,
+                                width: 150,
+                                height: 150
+                            });
+                        </script>
+                    </div>
+
                     <div class="sidebar">
                         <script>
                             (function () {
@@ -28,6 +39,7 @@
                         </script>
                         <gcse:searchbox-only></gcse:searchbox-only>
                     </div>
+
                     <div class="sidebar">
                         <div class="category-header">Categories</div>
                         <hr />
@@ -43,11 +55,12 @@
                             </li>
                         </ul>
                     </div>
-                   
+
                 </div>
             </div>
         </div>
     </div>
+
     {% include footer.html %}
 
 </body>
