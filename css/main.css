@@ -249,7 +249,10 @@ a.page-link:hover {
 /* ----------------------------------------------------------*/
 .mregion {
   margin-top:20px;
-  padding:30px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 15px;
+  padding-left: 30px;
   background-color: #fff;
   box-shadow:0 2px 16px #ccc;
 }

@@ -8,9 +8,9 @@ layout: cubes
       <div class="mregion">
         <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        <div class="title-desc">{{ post.description }}</div>
+        <div class="title-desc" style="margin-bottom: 15px;">{{ post.description }}</div>
 		
-		<div style="margin-top: 20px; font-size: 14px; color: #999;">
+		<div style="margin-top: 10px; font-size: 12px; color: #999;">
 		  {% if post.categories.size > 0 %}
             <i class="fa fa-folder"></i>
             {% for c in post.categories %}
