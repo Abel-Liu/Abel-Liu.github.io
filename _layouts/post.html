@@ -6,16 +6,34 @@ layout: default
     <header class="post-header">
         <h1>{{ page.title }}</h1>
         <div class="meta">
-            {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+            <div style="margin-bottom:10px;">
+                {{ page.date | date: "%b %-d, %Y" }}
 
-            <div style="float:right;" class="bdsharebuttonbox">
-                <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
-                <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-                <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
-                <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
-                <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
-                <a href="#" class="bds_more" data-cmd="more"></a>
+                <div style="float:right;" class="bdsharebuttonbox">
+                    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                    <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+                    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+                    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+                    <a href="#" class="bds_more" data-cmd="more"></a>
+                </div>
             </div>
+            
+            {% if page.categories.size > 0 %}
+              <i class="fa fa-folder"></i>
+              {% for c in page.categories %}
+                <a class="cat-tag" href="/{{c}}/">{{c}}</a>
+              {% endfor %}
+            {% endif %}
+
+            <span style="margin-left:20px;"></span>
+
+            {% if page.tags.size > 0 %}
+              <i class="fa fa-tags"></i>
+              {% for c in page.tags %}
+                {{c}}
+              {% endfor %}
+            {% endif %}
 
         </div>
 

@@ -40,6 +40,15 @@ a.category-link:hover {
   text-decoration: none;
 }
 
+.cat-tag{
+  padding:3px;
+}
+a.cat-tag:hover {
+  background-color: #C2B6A3;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
 .postcontent { line-height:25pt; }
 
 html, body { height: 100%; }
