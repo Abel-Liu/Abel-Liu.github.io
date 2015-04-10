@@ -41,11 +41,12 @@ a.category-link:hover {
 }
 
 .cat-tag{
-  padding:3px;
+  padding: 3px;
+  background-color: #e6e6e6;
+  border-radius: 5px;
 }
 a.cat-tag:hover {
   background-color: #C2B6A3;
-  border-radius: 5px;
   text-decoration: none;
 }
 

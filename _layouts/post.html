@@ -31,7 +31,7 @@ layout: default
             {% if page.tags.size > 0 %}
               <i class="fa fa-tags"></i>
               {% for c in page.tags %}
-                {{c}}
+                <span class="cat-tag">{{c}}</span>
               {% endfor %}
             {% endif %}
 
