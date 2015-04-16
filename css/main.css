@@ -43,8 +43,8 @@ a.category-link:hover {
 .cat-tag{
   font-size: 12px;
   padding: 2px;
-  background-color: #e6e6e6;
-  border-radius: 5px;
+  background-color: #F1F1EB;
+  border-radius: 3px;
 }
 a.cat-tag:hover {
   background-color: #C2B6A3;
