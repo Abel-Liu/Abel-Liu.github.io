@@ -13,17 +13,6 @@
             <div class="wrap">
                 <div class="content-col-1 column">{{ content }}</div>
                 <div class="content-col-2 column">
-                    <div class="sidebar" style="background:none;">
-                        <div id="qrcode" style="text-align:center;"></div>
-                        <script>
-                            $('#qrcode').qrcode({
-                                text: window.location.href,
-                                width: 150,
-                                height: 150
-                            });
-                        </script>
-                    </div>
-
                     <div class="sidebar">
                         <form>
                             <input type="text" id="st-search-input" class="st-search-input" />
@@ -47,6 +36,17 @@
                                 <a class="category-link" href="/web/">Web({{ site.categories.web.size }})</a>
                             </li>
                         </ul>
+                    </div>
+
+                    <div class="sidebar" style="background:none;">
+                        <div id="qrcode" style="text-align:center;"></div>
+                        <script>
+                            $('#qrcode').qrcode({
+                                text: window.location.href,
+                                width: 150,
+                                height: 150
+                            });
+                        </script>
                     </div>
 
                 </div>
