@@ -480,7 +480,7 @@ a.page-link:hover {
 @media screen and (max-width: 600px) {
 
   .wrap { padding: 0 12px; }
-
+  .home { padding: 30px;}
   .site-nav {
     position: fixed;
     z-index: 10;
