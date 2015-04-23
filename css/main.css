@@ -10,6 +10,16 @@
 }
 */
 
+.paging-panel
+{
+    height: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#page-nav a { text-decoration: none; }
+#page-nav a:hover { background-color: #C2B6A3; }
+
 .social-icons {
     margin-top: 10px;
 }

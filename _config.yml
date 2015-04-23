@@ -12,5 +12,7 @@ username: "Abel-Liu"
 # Build settings
 markdown: kramdown
 permalink: pretty
+paginate: 10
+paginate_path: "page:num"
 gems:
   - jekyll-sitemap

@@ -3,7 +3,7 @@ layout: cubes
 ---
 <div style="margin-top:50px;">
   <ul class="posts">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       <li>
       <div class="mregion">
         <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
