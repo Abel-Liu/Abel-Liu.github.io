@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>multi select</title>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="./js/jquery-ui-multiselect/jquery.multiselect.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+    <link rel="Stylesheet" type="text/css" href="./js/jquery-ui-multiselect/jquery.multiselect.css" />
+
+    <style>
+        body {
+            font-size:12px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        hCount = 0;
+
+        $(document).ready(function () {
+            if (hCount == 0) {
+                $("#mulsel1").multiselect({
+                    minWidth: 250
+                });
+
+                hCount = 1;
+            }
+        });
+
+    </script>
+
+</head>
+<body>
+    <div style="text-align:center; margin-bottom:30px;"><h1>multi select demo</h1></div>
+    <div>
+        <select id="mulsel1" name="mulsel1" multiple="multiple">
+            <option value="1">First</option>
+            <option value="2">Second</option>
+            <option value="3">Third</option>
+        </select>
+    </div>
+</body>
+</html>

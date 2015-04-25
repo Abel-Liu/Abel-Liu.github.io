@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Responsive web design</title>
+
+    <style type="text/css">
+        .general {
+            height: 50px;
+            background-color: blue;
+        }
+
+        .wrap{
+            margin-bottom:10px;
+            margin-top:10px;
+        }
+        .wrap:before,
+        .wrap:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .content-split .column {
+            float: left;
+        }
+
+        .content-col-1 {
+            width: 800px;
+            width: -webkit-calc(77% - 20px);
+            width: -moz-calc(77% - 20px);
+            width: -o-calc(77% - 20px);
+            width: calc(77% - 20px);
+            margin-right: 20px;
+            background-color: green;
+        }
+
+        .content-col-2 {
+            width: 200px;
+            width: -webkit-calc(23%);
+            width: -moz-calc(23%);
+            width: -o-calc(23%);
+            width: calc(23%);
+            background-color: red;
+        }
+
+        @media screen and (max-width: 750px) {
+            .content-split .column {
+                float: none;
+                clear: both;
+                width: auto;
+                margin-top: 10px;
+                margin-right:0px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div style="text-align:center; margin-bottom:30px;"><h1>Responsive web design</h1></div>
+
+    <div class="general">top</div>
+
+    <div class="content-split">
+        <div class="wrap">
+            <div class="content-col-1 column">
+                <div style="height:150px;">
+                    left
+                </div>
+            </div>
+            <div class="content-col-2 column">
+                <div style="height:100px;">
+                    right
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="general">bottom</div>
+
+</body>
+</html>

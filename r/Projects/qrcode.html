@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>qrcode</title>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="http://cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+    <script type="text/javascript">
+        hCount = 0;
+
+        $(document).ready(function () {
+            if (hCount == 0) {
+                $("#qrcode").qrcode({
+                    text: window.location.href,
+                    width: 150,
+                    height: 150
+                });
+                hCount = 1;
+            }
+        });
+
+    </script>
+
+</head>
+<body>
+    <div style="text-align:center; margin-bottom:30px;"><h1>Generate qrcode of current page</h1></div>
+    <div id="qrcode" style="text-align:center;"></div>
+</body>
+</html>
