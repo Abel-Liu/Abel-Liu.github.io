@@ -32,6 +32,6 @@ $("#qrcode").qrcode({
 });
 {% endhighlight %}
 
-[查看demo](http://htmlviewer.github.io/?https://github.com/Abel-Liu/StaticExample/blob/master/Projects/qrcode.html)
+[查看demo](http://staticres.github.io/Projects/qrcode.html)
 
-[查看完整代码](https://github.com/Abel-Liu/StaticExample/blob/master/Projects/qrcode.html)
+[查看完整代码](https://github.com/staticres/StaticRes.github.io/blob/master/Projects/qrcode.html)
