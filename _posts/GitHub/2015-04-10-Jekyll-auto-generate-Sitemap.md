@@ -13,6 +13,8 @@ gems:
   - jekyll-sitemap
 {% endhighlight %}
 
+<!--more-->
+
 本地编译要安装jekyll-sitemap组件<code>gem install jekyll-sitemap</code>，但安装中提示错误 Could not find a valid gem
 {% highlight console %}
 C:\Users\Abel-work>gem install jekyll-sitemap

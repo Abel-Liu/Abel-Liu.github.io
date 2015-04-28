@@ -7,7 +7,7 @@ tags: [sqlserver, 数据库结构]
 description: 使用SQL语句获取数据库的结构信息
 ---
 
-&emsp;&emsp;有时写文档想导出现有数据库的结构，又不想麻烦使用其他软件，现提供一个SQL语句可以查询出数据库中所有表和字段信息，包含字段类型、是否可空、默认值等，如下。
+&emsp;&emsp;有时写文档想导出现有数据库的结构，又不想麻烦使用其他软件，现提供一个SQL语句可以查询出数据库中所有表和字段信息，包含字段类型、是否可空、默认值等，如下。<!--more-->
 
 <div style="text-align: center;">
 <img style="max-width:100%;" src="http://i1373.photobucket.com/albums/ag384/abel_liu/GitHub/dbstruc_zpsdhzbewsv.jpg" border="0" alt="dbstru"/>

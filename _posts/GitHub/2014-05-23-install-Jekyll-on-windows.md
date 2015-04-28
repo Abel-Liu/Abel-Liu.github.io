@@ -7,6 +7,8 @@ tags: [Jekyll, Windows, GitHub]
 
 &emsp;&emsp;捣鼓了几天终于把博客搭出来了，之前不认识Jekyll，费劲查了很多资料，在此把我安装的过程和遇到的问题整理一下，做一个详细的教程，希望刚接触Jekyll且没头绪的同学们能省点事。
 
+<!--more-->
+
 说明：主要参考<a href="http://www.madhur.co.in/blog/2011/09/01/runningjekyllwindows.html" target="_blank">官方文档</a>和叶的一篇文章<a href="http://www.cnblogs.com/yevon/archive/2013/09/19/3310857.html" target="_blank">http://www.cnblogs.com/yevon/archive/2013/09/19/3310857.html</a>
 
 * 从<a href="http://rubyinstaller.org/downloads/" target="_blank">这里</a>下载Ruby和Ruby Development Kit，注意32位和64位，两个要保持一致。

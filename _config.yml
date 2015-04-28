@@ -14,5 +14,6 @@ markdown: kramdown
 permalink: pretty
 paginate: 10
 paginate_path: "page:num"
+excerpt_separator: <!--more-->
 gems:
   - jekyll-sitemap

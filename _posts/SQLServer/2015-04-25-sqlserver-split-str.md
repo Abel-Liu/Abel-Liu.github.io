@@ -15,6 +15,8 @@ description:
 SELECT * FROM [fn_split_str]('aa,bb,cc,,dd', ',', 1)
 {% endhighlight %}
 
+<!--more-->
+
 返回结果
 
 <div style="text-align: center;">
