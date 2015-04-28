@@ -204,7 +204,7 @@ a.page-link:hover {
 }
 
 .content-col-2 {
-  margin-top: 50px;
+  margin-top: 30px;
   width: 200px; /*fallback*/
   width: -webkit-calc(23%);
   width: -moz-calc(23%);
