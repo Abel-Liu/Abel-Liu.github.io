@@ -1,4 +1,0 @@
----
-layout: catpage
-tag: life
----
