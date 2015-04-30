@@ -22,24 +22,11 @@
                         <div class="category-header">Categories</div>
                         <hr />
                         <ul class="category-panel">
+                            {% for c in site.categories %}
                             <li>
-                                <a class="category-link" href="/cat/life/">Life({{ site.categories.life.size }})</a>
+                                <a class="category-link" href="/cat/{{c[0]}}/">{{c[0]}}({{c[1].size}})</a>
                             </li>
-                            <li>
-                                <a class="category-link" href="/cat/it/">IT({{ site.categories.it.size }})</a>
-                            </li>
-                            <li>
-                                <a class="category-link" href="/cat/github/">GitHub({{ site.categories.github.size }})</a>
-                            </li>
-                            <li>
-                                <a class="category-link" href="/cat/web/">Web({{ site.categories.web.size }})</a>
-                            </li>
-                            <li>
-                                <a class="category-link" href="/cat/linux/">Linux({{ site.categories.linux.size }})</a>
-                            </li>
-                            <li>
-                                <a class="category-link" href="/cat/sqlserver/">SQL Server({{ site.categories.sqlserver.size }})</a>
-                            </li>
+                            {% endfor %}
                         </ul>
                     </div>
 
