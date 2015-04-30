@@ -3,7 +3,7 @@ layout: post
 title:  "查询SQL Server数据库结构"
 date:   2015-04-24 23:00:00
 categories: sqlserver
-tags: [sqlserver, 数据库结构]
+tags: [sqlserver]
 description: 使用SQL语句获取数据库的结构信息
 ---
 

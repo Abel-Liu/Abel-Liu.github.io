@@ -3,7 +3,7 @@ layout: post
 title:  "SQL Server日期操作技巧"
 date:   2015-04-23 21:30:00
 categories: sqlserver
-tags: [sqlserver, 日期]
+tags: [sqlserver]
 description: 
 ---
 

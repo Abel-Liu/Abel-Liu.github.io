@@ -30,6 +30,16 @@
                         </ul>
                     </div>
 
+                    <div class="sidebar">
+                        <div class="category-header">Tags</div>
+                        <hr />
+                        <div style="margin-top: 10px;">
+                            {% for t in site.tags %}
+                            <a class="cat-tag" href="/tag/{{t[0]}}">{{t[0]}}({{t[1].size}})</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+
                     <div class="sidebar" style="background:none;">
                         <div id="qrcode" style="text-align:center;"></div>
                         <script>

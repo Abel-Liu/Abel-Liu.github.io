@@ -3,7 +3,7 @@ layout: post
 title:  "SQL Server分割字符串"
 date:   2015-04-25 08:20:00
 categories: sqlserver
-tags: [sqlserver, split, 分割字符串]
+tags: [sqlserver, split]
 description:
 ---
 

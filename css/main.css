@@ -24,7 +24,13 @@
 }
 
 #page-nav a { text-decoration: none; }
-#page-nav a:hover { background-color: #C2B6A3; }
+#page-nav a:hover {
+     background-color: #e67e22; 
+     color: #FFF;
+     -webkit-transition: all 0.2s ease;
+          -o-transition: all 0.2s ease;
+             transition: all 0.2s ease;
+}
 
 .social-icons {
     margin-top: 10px;
@@ -57,7 +63,6 @@ a.backToTop:hover { opacity: .7; }
   text-align: center;
   margin-bottom: 5px;
   font-size: 16px;
-  color: #818181;
 }
 .category-panel { list-style-type: none; }
 .category-panel li { margin-top: 7px; }
@@ -70,20 +75,31 @@ a.backToTop:hover { opacity: .7; }
   display: block;
 }
 a.category-link:hover {
-  background-color: #C2B6A3;
-  border-radius: 10px;
+  background-color: #e67e22;
+  color: #fff;
   text-decoration: none;
+
+  -webkit-transition: all 0.2s ease;
+       -o-transition: all 0.2s ease;
+          transition: all 0.2s ease;
 }
 
 .cat-tag{
+  border: 1px solid #ebebeb;
+  padding: 2px 5px;
+  color: #959595;
+  display: inline-block;
+  margin: 0 1px 4px 0;
   font-size: 12px;
-  padding: 2px;
-  background-color: #F1F1EB;
-  border-radius: 3px;
+
+  -webkit-transition: all 0.2s ease;
+       -o-transition: all 0.2s ease;
+          transition: all 0.2s ease;
 }
 a.cat-tag:hover {
-  background-color: #C2B6A3;
+  background-color: #e67e22;
   text-decoration: none;
+  color: #fff;
 }
 
 .postcontent { line-height:25pt; }
@@ -106,7 +122,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
 
-a         { color: #da6426; text-decoration: none; }
+a         { color: #e67e22; text-decoration: none; }
 a:hover   { text-decoration: underline; }
 
 /* Utility */
@@ -115,14 +131,14 @@ a:hover   { text-decoration: underline; }
 .wrap:after { content:""; display:table; }
 .wrap:after { clear: both; }
 .wrap {
-  max-width: 1100px;
+  max-width: 1150px;
   padding: 0 30px;
   margin: 0 auto;
   zoom: 1;
 }
 
 .wrapcube {
-  max-width: 800px;
+  max-width: 850px;
   margin: 0 auto;
   zoom: 1;
 }
@@ -187,7 +203,7 @@ a.page-link:hover {
 
 .sidebar{
   margin-bottom: 20px;
-  padding: 10px;
+  padding: 10px 15px;
   background-color: #fff;
   box-shadow:0 2px 16px #ccc;
 }
@@ -195,17 +211,17 @@ a.page-link:hover {
 .content-split .column { float: left; }
 
 .content-col-1 {
-  width: 800px; /*fallback*/
-  width: -webkit-calc(77% - 20px);
-  width: -moz-calc(77% - 20px);
-  width: -o-calc(77% - 20px);
-  width: calc(77% - 20px);
-  margin-right: 20px
+  width: 800px;
+  width: -webkit-calc(77% - 30px);
+  width: -moz-calc(77% - 30px);
+  width: -o-calc(77% - 30px);
+  width: calc(77% - 30px);
+  margin-right: 30px
 }
 
 .content-col-2 {
   margin-top: 30px;
-  width: 200px; /*fallback*/
+  width: 200px;
   width: -webkit-calc(23%);
   width: -moz-calc(23%);
   width: -o-calc(23%);

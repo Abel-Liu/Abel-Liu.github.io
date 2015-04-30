@@ -3,7 +3,7 @@ layout: post
 title:  "响应式网页设计"
 date:   2015-04-19 9:00:00
 categories: Web
-tags: [响应式, responsive]
+tags: [responsive]
 description: 根据浏览器大小自动调整显示效果
 ---
 
