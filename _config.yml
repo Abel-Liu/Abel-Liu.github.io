@@ -15,7 +15,7 @@ permalink: pretty
 paginate: 10
 paginate_path: "page:num"
 excerpt_separator: <!--more-->
-category_dir: cat
-tag_dir: tag
+category_dir: _cat
+tag_dir: _tag
 gems:
   - jekyll-sitemap

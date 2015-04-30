@@ -18,7 +18,7 @@ module Jekyll
 
     def generate(site)
       if site.layouts.key? 'catpage'
-        dir = site.config['category_dir'] || 'categories'
+        dir = site.config['category_dir'] || '_categories'
         site.categories.keys.each do |cat|
           site.pages << CategoryPage.new(site, site.source, File.join(dir, cat), cat)
         end
