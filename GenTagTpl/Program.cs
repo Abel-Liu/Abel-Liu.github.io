@@ -10,24 +10,34 @@ namespace GenTagTpl
     {
         static void Main(string[] args)
         {
-            var fromCatDir = ConfigurationManager.AppSettings["fromCatDir"];
-            var fromTagDir = ConfigurationManager.AppSettings["fromTagDir"];
-            var destCatDir = ConfigurationManager.AppSettings["destCatDir"];
-            var destTagDir = ConfigurationManager.AppSettings["destTagDir"];
-            var catTpl =
-@"---
+            try
+            {
+                var fromCatDir = ConfigurationManager.AppSettings["fromCatDir"];
+                var fromTagDir = ConfigurationManager.AppSettings["fromTagDir"];
+                var destCatDir = ConfigurationManager.AppSettings["destCatDir"];
+                var destTagDir = ConfigurationManager.AppSettings["destTagDir"];
+                var catTpl =
+    @"---
 layout: catpage
 tag: {0}
 ---";
-            var tagTpl =
-@"---
+                var tagTpl =
+    @"---
 layout: tagpage
 tag: {0}
 ---";
-            Gen(fromCatDir, destCatDir, catTpl);
-            Gen(fromTagDir, destTagDir, tagTpl);
 
-            Console.WriteLine("OK. Press any key to exit...");
+                Gen(fromCatDir, destCatDir, catTpl);
+                Gen(fromTagDir, destTagDir, tagTpl);
+
+                Console.WriteLine("OK. Press any key to exit...");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine(e.StackTrace);
+            }
+
             Console.ReadKey();
         }
 
