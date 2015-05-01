@@ -31,7 +31,7 @@ layout: default
             {% if page.tags.size > 0 %}
               <i class="fa fa-tags"></i>
               {% for c in page.tags %}
-                <span class="cat-tag">{{c}}</span>
+                <a class="cat-tag" href="/tag/{{c}}/">{{c}}</a>
               {% endfor %}
             {% endif %}
 

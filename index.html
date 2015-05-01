@@ -16,7 +16,7 @@ layout: cubes
 		  {% if post.categories.size > 0 %}
             <i class="fa fa-folder"></i>
             {% for c in post.categories %}
-                  <a class="cat-tag" href="/cat/{{c}}/">{{c}}</a>
+                <a class="cat-tag" href="/cat/{{c}}/">{{c}}</a>
             {% endfor %}
           {% endif %}
 		  
@@ -25,7 +25,7 @@ layout: cubes
           {% if post.tags.size > 0 %}
             <i class="fa fa-tags"></i>
             {% for c in post.tags %}
-              <span class="cat-tag">{{c}}</span>
+                <a class="cat-tag" href="/tag/{{c}}/">{{c}}</a>
             {% endfor %}
           {% endif %}
 		</div>
