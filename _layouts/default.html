@@ -12,13 +12,13 @@
             <div class="wrap">
                 <div class="content-col-1 column">{{ content }}</div>
                 <div class="content-col-2 column">
-                    <div class="sidebar">
+                    <div id="search" class="sidebar">
                         <form>
                             <input type="text" id="st-search-input" class="st-search-input" />
                         </form>
                     </div>
 
-                    <div class="sidebar">
+                    <div id="cat" class="sidebar">
                         <div class="category-header">Categories</div>
                         <hr />
                         <ul class="category-panel">
@@ -30,7 +30,7 @@
                         </ul>
                     </div>
 
-                    <div class="sidebar">
+                    <div id="tag" class="sidebar">
                         <div class="category-header">Tags</div>
                         <hr />
                         <div style="margin-top: 10px;">
@@ -40,7 +40,7 @@
                         </div>
                     </div>
 
-                    <div class="sidebar" style="background:none;">
+                    <div id="qr" class="sidebar" style="background:none;">
                         <div id="qrcode" style="text-align:center;"></div>
                         <script>
                             $('#qrcode').qrcode({
