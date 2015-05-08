@@ -31,9 +31,17 @@
 	            event.preventDefault();
 
 	            var anchor = $(this).attr('href').substring(1);
-	            if (anchor == '')
-	            {
-	                location.href = '/';
+	            //if (anchor == '')
+	            //{
+	            //    location.href = '/';
+	            //}
+	            if (window.screen.width < 600) {
+	                $('.trigger').hide();
+	            }
+
+	            if (anchor == 'translate') {
+	                $('#LauncherTranslatePhrase').click();
+	                return;
 	            }
 	            
 	            var el = $('#' + anchor);
@@ -41,10 +49,6 @@
 	            var toTop = el.offset().top - nav.height() - 3;
 
 	            $('html,body').animate({ scrollTop: toTop });
-
-	            if (window.screen.width < 600) {
-	                $('.trigger').hide();
-	            }
 
 	            return false;
 	        });
