@@ -187,16 +187,18 @@ a:hover   { text-decoration: underline; }
 }
 
 .page-link {
-  margin-left: 20px;
-  letter-spacing: -.5px;
-  visited: #fff;
+  margin-left: 5px;
   padding: 5px;
 }
 
 a.page-link:hover {
-  background-color: #C2B6A3;
-  border-radius: 10px;
+  background-color: #e67e22;
+  color: #fff;
   text-decoration: none;
+
+  -webkit-transition: all 0.2s ease;
+       -o-transition: all 0.2s ease;
+          transition: all 0.2s ease;
 }
 
 /* Content column */

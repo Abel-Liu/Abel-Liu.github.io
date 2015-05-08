@@ -25,6 +25,30 @@
                 //calc searchbox width
 		        $("#st-search-input").css("width", $("#st-search-input").parent().width()-38);
 	        });
+
+            //scroll via nav
+	        $(document).on('click', '.trigger a', function (event) {
+	            event.preventDefault();
+
+	            var anchor = $(this).attr('href').substring(1);
+	            if (anchor == '')
+	            {
+	                location.href = '/';
+	            }
+	            
+	            var el = $('#' + anchor);
+	            var nav = $('.site-header');
+	            var toTop = el.offset().top - nav.height() - 3;
+
+	            $('html,body').animate({ scrollTop: toTop });
+
+	            if (window.screen.width < 600) {
+	                $('.trigger').hide();
+	            }
+
+	            return false;
+	        });
+
         });
     </script>
 
