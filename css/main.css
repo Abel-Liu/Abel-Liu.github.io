@@ -32,6 +32,11 @@
              transition: all 0.2s ease;
 }
 
+.paging-num{
+    padding: .5em 1em;
+    display:inline-block;
+}
+
 .social-icons {
     margin-top: 10px;
 }
