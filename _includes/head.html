@@ -31,16 +31,17 @@
 	            event.preventDefault();
 
 	            var anchor = $(this).attr('href').substring(1);
-	            //if (anchor == '')
-	            //{
-	            //    location.href = '/';
-	            //}
+	           
 	            if (window.screen.width < 600) {
 	                $('.trigger').hide();
 	            }
 
 	            if (anchor == 'translate') {
 	                $('#LauncherTranslatePhrase').click();
+	                return;
+	            }
+	            if (anchor == 'about') {
+	                location.href = '/about';
 	                return;
 	            }
 	            
