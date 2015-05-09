@@ -92,7 +92,7 @@ description: 根据浏览器大小自动调整显示效果
 * <code>content-col</code>定义了两列不同比例的宽度。
 * <code>@media screen and (max-width: 750px)</code>意思是当浏览器宽度小于750px时，改变指定的样式。清除浮动，并将宽度设为自动。
 
-[查看demo](http://abel-liu.github.io/r/Projects/responsive.html)
+[查看demo](http://abel-liu.github.io/res/projects/sample-page/responsive.html)
 
 [查看完整代码](https://github.com/Abel-Liu/Abel-Liu.github.io/blob/master/r/Projects/responsive.html)
 

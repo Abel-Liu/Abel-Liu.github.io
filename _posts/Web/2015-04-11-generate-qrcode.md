@@ -32,6 +32,6 @@ $("#qrcode").qrcode({
 });
 {% endhighlight %}
 
-[查看demo](http://abel-liu.github.io/r/Projects/qrcode.html)
+[查看demo](http://abel-liu.github.io/res/projects/sample-page/qrcode.html)
 
 [查看完整代码](https://github.com/Abel-Liu/Abel-Liu.github.io/blob/master/r/Projects/qrcode.html)
