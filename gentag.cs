@@ -12,10 +12,10 @@ namespace GenTagTpl
         {
             try
             {
-                var fromCatDir = ConfigurationManager.AppSettings["fromCatDir"];
-                var fromTagDir = ConfigurationManager.AppSettings["fromTagDir"];
-                var destCatDir = ConfigurationManager.AppSettings["destCatDir"];
-                var destTagDir = ConfigurationManager.AppSettings["destTagDir"];
+                var fromCatDir = "./_site/_cat";
+                var fromTagDir = "./_site/_tag";
+                var destCatDir = "./cat";
+                var destTagDir = "./tag";
                 var catTpl =
     @"---
 layout: catpage
