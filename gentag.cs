@@ -29,8 +29,6 @@ tag: {0}
 
                 Gen(fromCatDir, destCatDir, catTpl);
                 Gen(fromTagDir, destTagDir, tagTpl);
-
-                Console.WriteLine("OK. Press any key to exit...");
             }
             catch (Exception e)
             {
@@ -38,7 +36,6 @@ tag: {0}
                 Console.WriteLine(e.StackTrace);
             }
 
-            Console.ReadKey();
         }
 
         static void Gen(string fromDir, string destDir, string tpl)
