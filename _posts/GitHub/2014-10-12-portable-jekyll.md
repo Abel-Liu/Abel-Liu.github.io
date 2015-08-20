@@ -9,6 +9,8 @@ tags: [Jekyll, GitHub, Portable]
 
 * Download Python and Ruby from <a href="https://copy.com/7mYfvWrpGbNYpxm4" target="_blank">here</a> (x64 only)
 
+* Uncompress <code>Portable Python 2.7.5.1</code>、<code>Ruby200-x64</code>、<code>RubyDevKit</code>
+
 * Add Ruby&Python folder to PATH environment variable.For example:
 
 	>x:\Ruby200-x64\bin;  
@@ -32,4 +34,6 @@ tags: [Jekyll, GitHub, Portable]
 	>\---  
 	>\- x:/Ruby200-x64  
 
+
+You are done.
 
