@@ -2,6 +2,8 @@
 layout: post
 title:  "Visual Studio扩展推荐"
 categories: IT
+date:   2014-10-09 11:00:00
+tags: [vs]
 ---
 推荐几个很棒的Visual Studio扩展。<!--more-->
 
