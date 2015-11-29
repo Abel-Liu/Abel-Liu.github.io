@@ -11,7 +11,7 @@ description:
 <i>检索COM类工厂中CLSID为{000209FF-0000-0000-C000-000000000046}的组件时失败，原因是出现以下错误：80070005</i> <!--more-->
 
 <div style="text-align: center;">
-<img style="width:100%;" src="/r/img/office-com.jpg" border="0" alt="office"/>
+<img style="width:100%;" src="/res/office-com.jpg" border="0" alt="office"/>
 </div>
 
 这个问题是因为没有调用COM组件的权限，我开发环境下（Win7 Ultimate x64和Office 2010 x86）并没有出现这个问题，而部署到正式环境（Windows Server 2008 R2和Office 2010 x64）出现了这个问题。
