@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Visual Studio扩展推荐"
-categories: IT
+categories: [Visual Studio]
 date:   2014-10-09 11:00:00
 tags: [vs]
 ---
