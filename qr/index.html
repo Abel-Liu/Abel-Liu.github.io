@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, minimum-scale=0.1">
+    <title>QR</title>
+    <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+    <script src="http://cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+</head>
+<body>
+    <div id="qrcode" style="text-align: center;"></div>
+    <script>
+        function GetQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null)
+                return (r[2]);
+            return "";
+        };
+
+        var text = GetQueryString("text");
+
+        if (text != "") {
+            $('#qrcode').qrcode({
+                text: text,
+                width: 200,
+                height: 200
+            });
+        }
+        else
+            $('#qrcode').html("Parameter error.");
+    </script>
+</body>
+</html>
