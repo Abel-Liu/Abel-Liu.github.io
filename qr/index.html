@@ -25,9 +25,16 @@
                 width: 200,
                 height: 200
             });
+
+            if(GetQueryString("r")=="image") {
+                var canvas = $("#qrcode").children().get(0);
+                var img = canvas.toDataURL("image/png");
+                
+                $("#qrcode").html('<img src="'+img+'"/>');
+            }
         }
         else
-            $('#qrcode').html("Parameter error.");
+            $('#qrcode').html("Parameter error.text=something&r=image");
     </script>
 </body>
 </html>
