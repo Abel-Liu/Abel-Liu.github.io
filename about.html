@@ -1,12 +1,50 @@
 ---
-layout: simplepage
+layout: 
 ---
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Abel's Blog</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Here is my blog include IT articles and essays.">
+    <link rel="canonical" href="http://www.abelliu.com/about/" />
 
-<div>
-    <div id="aboutpage-divtop" style="text-align:center;">
-        <h1 style="font-size:26px;">About Me</h1>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.css' />
+    <link rel="stylesheet" href='/css/fullpage-custom.css' />
+
+    <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#e67e22', '#4BBFC3', '#22C3E6'],
+                anchors: ['tag', 'secondPage', '3rdPage'],
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['Tag', 'Second page', 'Third and last page']
+                });
+            InitTag()
+        });
+    </script>
+</head>
+<body>
+    <ul id="menu">
+        <li><a href="{{ site.baseurl }}/">Home</a></li>
+    </ul>
+    <div id="fullpage">
+        <div class="section">
+            <div>
+                <div id="aboutpage-divtop" style="text-align:center;">
+                    <h1 style="font-size:26px;margin-bottom: 30px;">About Me</h1>
+                </div>
+                <script type="text/javascript" src="/js/about.js"></script>
+            </div>
+        </div>
+        <div class="section">Some section</div>
+        <div class="section">Some section</div>
     </div>
-    
-    <script type="text/javascript" src="/js/about.js"></script>
-
-</div>
+</body>
+</html>
