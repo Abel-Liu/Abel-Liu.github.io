@@ -2,7 +2,7 @@
 layout: post
 title:  "JS生成当前页面二维码"
 date:   2015-04-11 15:00:00
-categories: Web
+categories: web
 tags: [qrcode, jquery]
 description: 使用JS生成当前页面二维码
 ---

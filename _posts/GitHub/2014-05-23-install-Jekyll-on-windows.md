@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Windows下搭建Jekyll教程"
-categories: GitHub
+categories: github
 tags: [Jekyll, Windows, GitHub]
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "二十年之旅——心声篇"
 date:   2011-10-12 16:00:00
-categories: Life
+categories: life
 description: 二十年，上天给了太多的优待。
 ---
 

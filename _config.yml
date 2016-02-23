@@ -12,6 +12,7 @@ username: "Abel-Liu"
 # Build settings
 markdown: kramdown
 permalink: pretty
+highlighter: rouge
 paginate: 10
 paginate_path: "page:num"
 excerpt_separator: <!--more-->
@@ -20,3 +21,4 @@ tag_dir: _tag
 future: true
 gems:
   - jekyll-sitemap
+  - jekyll-paginate

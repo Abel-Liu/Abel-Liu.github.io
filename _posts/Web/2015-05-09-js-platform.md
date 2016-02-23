@@ -2,7 +2,7 @@
 layout: post
 title:  "JS判断设备平台"
 date:   2015-05-09 21:00:00
-categories: Web
+categories: web
 tags: [js]
 description: 
 ---

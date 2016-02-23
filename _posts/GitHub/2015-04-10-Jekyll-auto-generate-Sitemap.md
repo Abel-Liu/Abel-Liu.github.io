@@ -2,7 +2,7 @@
 layout: post
 title:  "Jekyll自动生成Sitemap"
 date:   2015-04-10 12:00:00
-categories: GitHub
+categories: github
 tags: [Jekyll, sitemap, ruby, gem, GitHub]
 description: 介绍如何让Jekyll自动生成Sitemap及Could not find a valid gem处理
 ---

@@ -2,7 +2,7 @@
 layout: post
 title:  "儿童节快乐"
 date:   2014-06-01 17:00:00
-categories: Life
+categories: life
 description: 为什么越来越多的人过儿童节？
 ---
 

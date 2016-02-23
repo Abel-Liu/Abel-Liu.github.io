@@ -2,7 +2,7 @@
 layout: post
 title:  "Linux备份目录"
 date:   2015-05-09 19:00:00
-categories: Linux
+categories: linux
 tags: [Linux, backup]
 description: 
 ---

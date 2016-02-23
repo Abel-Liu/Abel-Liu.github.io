@@ -2,7 +2,7 @@
 layout: post
 title:  "自言自语"
 date:   2014-05-25 22:30:00
-categories: Life
+categories: life
 ---
 <div class="postcontent">
 &emsp;&emsp;这两天弄博客真的累坏了，脑袋蒙蒙的，打眼一看，呆滞的表情、不知身在何处的状态。不断涌现的想法、一遍遍的Commit，仿佛又回到大三大四写代码的状态，一天连续10几个小时，低头抬头间昼夜变换。

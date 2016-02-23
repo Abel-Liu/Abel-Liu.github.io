@@ -2,7 +2,7 @@
 layout: post
 title:  "配置IIS指定类型文件可下载"
 date:   2015-07-17 17:00:00
-categories: DotNet
+categories: dotnet
 tags: [iis]
 description: 
 ---

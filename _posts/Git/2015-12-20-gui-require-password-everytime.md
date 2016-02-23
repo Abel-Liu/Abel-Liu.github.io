@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "解决Windows下Git GUI每次同步需要输入密码"
-categories: [Git]
+categories: [git]
 date:   2015-12-20 16:30:00
 tags: [Git GUI]
 description: 

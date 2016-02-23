@@ -2,7 +2,7 @@
 layout: post
 title:  "C#调用Office的COM组件失败的解决方法"
 date:   2015-06-20 12:00:00
-categories: DotNet
+categories: dotnet
 tags: [csharp, office, com]
 description: 
 ---

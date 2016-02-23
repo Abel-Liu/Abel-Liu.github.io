@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Semantic Versioning 语义化版本"
-categories: IT
+categories: it
 date:   2015-05-26 10:00:00
 tags: [version]
 description: 

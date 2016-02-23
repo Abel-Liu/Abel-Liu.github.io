@@ -15,7 +15,7 @@ description:
 
 使用以下SQL语句发送邮件：
 
-{% highlight mysql %}
+```sql
 declare @mailBody nvarchar(max), @mailSubject nvarchar(max)
 
 set @mailSubject = N'Test Mail'
@@ -47,6 +47,6 @@ set @mailBody = @mailBody + '</body></html>'
 -- 发送邮件
 exec msdb.dbo.sp_send_dbmail @profile_name = 'YourProfile', @recipients  = 'someone@abc.com', @subject = @mailSubject, @body = @mailBody, @body_format = 'HTML'
 
-{% endhighlight %}
+```
 
 
