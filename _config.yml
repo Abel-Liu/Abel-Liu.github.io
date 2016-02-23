@@ -17,5 +17,6 @@ paginate_path: "page:num"
 excerpt_separator: <!--more-->
 category_dir: _cat
 tag_dir: _tag
+future: true
 gems:
   - jekyll-sitemap
