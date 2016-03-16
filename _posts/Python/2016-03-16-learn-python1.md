@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: learnpython
 title:  "Python学习笔记（一）"
 date:   2016-03-16 14:00:00
 categories: python
-tags: [python]
+tags: [python, pylesson]
 description: 
 ---
 
