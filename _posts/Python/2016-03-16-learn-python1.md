@@ -91,7 +91,7 @@ D:\>
 
 * 代码格式
 
-使用<code>#</code>进行注释，行尾冒号<code>:</code>进行缩进
+使用<code>#</code>进行注释，行尾冒号<code>:</code>表示代码块（相当于C++中的大括号{}）
 
 ```python
 #判断语句
@@ -102,5 +102,16 @@ if a > 0:
 else:
     print('-')
 ```
+
+Python的代码文件头部一般有以下注释
+
+```python
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+```
+
+第一行告诉Linux/OS X系统，这是一个Python可执行程序，Windows系统会忽略这个注释
+
+第二行是为了告诉Python解释器按照UTF-8编码读取源代码，否则源代码中的中文输出可能会有乱码
 
 >Python大小写敏感，大小写不正确将导致编译错误
