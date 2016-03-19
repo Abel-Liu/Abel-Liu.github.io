@@ -1,6 +1,6 @@
 ---
 layout: learnpython
-title:  "Python学习笔记（一）"
+title:  "Python学习笔记（一） 入门"
 date:   2016-03-16 14:00:00
 categories: python
 tags: [python, pylesson]
@@ -115,3 +115,35 @@ Python的代码文件头部一般有以下注释
 第二行是为了告诉Python解释器按照UTF-8编码读取源代码，否则源代码中的中文输出可能会有乱码
 
 >Python大小写敏感，大小写不正确将导致编译错误
+
+* 除法运算
+
+`/`的结果是浮点数；`//`只取商；`%`取余
+
+```
+>>> 10/3
+3.3333333333333335
+>>> 9/3
+3.0
+>>> 10//3
+3
+>>> 10%3
+1
+```
+
+* 字符串格式化
+
+Python同样使用`%`作为占位符
+
+<table style="width:100%; margin-left:20px;">
+    <tr><td style="width:10%;">%d</td><td>整数</td></tr>
+    <tr><td>%f</td><td>浮点数</td></tr>
+    <tr><td>%s</td><td>字符串</td></tr>
+</table>
+
+用法`表达式 % (arg1, arg2, ...)`
+
+```
+>>> '%d + %f = %.2f' % (3, 3.1415, 3+3.14159)
+'3 + 3.141500 = 6.14'
+```
