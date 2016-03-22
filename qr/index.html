@@ -7,34 +7,51 @@
     <script src="http://cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
 </head>
 <body>
+    <div style="text-align: center; margin:50px 0;">
+        <input type="text" id="intxt" style="width:70%; max-width:500px;" />
+        <input type="button" id="btnGo" onclick="GoQr();" value="Get QR" />
+    </div>
     <div id="qrcode" style="text-align: center;"></div>
     <script>
-        function GetQueryString(name) {
-            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
-            var r = window.location.search.substr(1).match(reg);
-            if (r != null)
-                return (r[2]);
-            return "";
-        };
+        function GoQr() {
+            var text = $("#intxt").val();
+            if (text != "") {
+                $('#qrcode').html("");
 
-        var text = GetQueryString("text");
-
-        if (text != "") {
-            $('#qrcode').qrcode({
-                text: text,
-                width: 200,
-                height: 200
-            });
-
-            if(GetQueryString("r")=="image") {
-                var canvas = $("#qrcode").children().get(0);
-                var img = canvas.toDataURL("image/png");
-                
-                $("#qrcode").html('<img src="'+img+'"/>');
+                $('#qrcode').qrcode({
+                    text: text,
+                    width: 200,
+                    height: 200
+                });
             }
         }
-        else
-            $('#qrcode').html("Parameter error.text=something&r=image");
+
+        //function GetQueryString(name) {
+        //    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        //    var r = window.location.search.substr(1).match(reg);
+        //    if (r != null)
+        //        return (r[2]);
+        //    return "";
+        //};
+
+        //var text = GetQueryString("text");
+
+        //if (text != "") {
+        //    $('#qrcode').qrcode({
+        //        text: text,
+        //        width: 200,
+        //        height: 200
+        //    });
+
+        //    if (GetQueryString("r") == "image") {
+        //        var canvas = $("#qrcode").children().get(0);
+        //        var img = canvas.toDataURL("image/png");
+
+        //        $("#qrcode").html('<img src="' + img + '"/>');
+        //    }
+        //}
+        //else
+        //    $('#qrcode').html("Parameter error.text=something&r=image");
     </script>
 </body>
 </html>
