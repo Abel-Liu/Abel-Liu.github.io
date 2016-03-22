@@ -26,6 +26,13 @@
             }
         }
 
+        $(function () {
+            document.onkeydown = function (e) {
+                if (e.keyCode == 13)
+                    GoQr();
+            };
+        });
+
         //function GetQueryString(name) {
         //    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
         //    var r = window.location.search.substr(1).match(reg);
