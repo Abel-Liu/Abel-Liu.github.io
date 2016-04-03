@@ -166,6 +166,15 @@ p {
     margin: 0;
 }
 
+.about-top {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-top h1 {
+    font-size: 35px;
+}
+
 .about-tag-container {
     display: none;
 }
@@ -176,12 +185,8 @@ p {
     display: inline-block;
     margin: 0 0 16px 16px;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 18px;
     font-family: "微软雅黑", Helvetica, Arial, sans-serif;
-}
-
-.wrap {
-    padding: 20px;
 }
 
 .wrap:before,
@@ -205,16 +210,26 @@ p {
 }
 
 .wrap img {
-    width: 100%;
+    height: 100%;
     box-shadow: 0 10px 30px #333;
     opacity: 0;
 }
 
 @media screen and (max-width: 750px) {
+    .about-top {
+        margin-bottom: 30px;
+    }
     .about-tag {
         padding: 2px 5px;
         margin: 0 0 10px 8px;
         font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrap img {
+        opacity: 1;
+        width: 100%;
     }
     .wrap {
         padding: 0px;
@@ -223,8 +238,5 @@ p {
         float: none;
         clear: both;
         width: auto;
-    }
-    .wrap img {
-        max-width: 450px;
     }
 }

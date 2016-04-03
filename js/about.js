@@ -1,3 +1,5 @@
+_responsiveWidth = 600;
+
 $(document).ready(function() {
     $('#fullpage').fullpage({
         sectionsColor: ['#e67e22', '#4BBFC3', '#22C3E6'],
@@ -5,6 +7,7 @@ $(document).ready(function() {
         navigation: true,
         navigationPosition: 'right',
         navigationTooltips: ['Tag', 'Second page', 'Life'],
+        responsiveWidth: _responsiveWidth,
         //scrollOverflow: true,
 
         afterLoad: function(anchorLink, index) {
@@ -19,7 +22,13 @@ $(document).ready(function() {
         }
     });
 
-    InitTag()
+    SetPhotoSize();
+
+    $(window).resize(function() {
+        SetPhotoSize();
+    });
+
+    InitTag();
 });
 
 function InitTag() {
@@ -40,7 +49,6 @@ function InitTag() {
     for (var i = 0; i < arr.length; i++) {
         $('#about-tag-' + i).fadeIn(GetRandomNum(400, 4000));
     }
-
 }
 
 function GetRandomNum(Min, Max) {
@@ -50,6 +58,9 @@ function GetRandomNum(Min, Max) {
 }
 
 function InLife() {
+    if (document.body.clientWidth < _responsiveWidth)
+        return;
+
     $('#l1').addClass('animated rotateInDownLeft');
     $('#l2').addClass('animated fadeInDown');
     $('#l3').addClass('animated rotateInDownRight');
@@ -67,4 +78,19 @@ function OutLife() {
     $('#l7').removeClass('animated rotateInUpLeft');
     $('#l8').removeClass('animated fadeInUp');
     $('#l9').removeClass('animated rotateInUpRight');
+
+    $(".wrap img").css('opacity', document.body.clientWidth < _responsiveWidth ? 1 : 0);
+}
+
+function SetPhotoSize() {
+    if (document.body.clientWidth < 600) {
+        //$(".content-col-1").height('100%');
+        return;
+    } else {
+        var pageHeight = document.body.clientHeight;
+        $(".content-col-1").height((pageHeight - 80) / 2);
+
+        if ($(".section.active")[0].id == "seclife")
+            $(".wrap img").css('opacity', 1);
+    }
 }
