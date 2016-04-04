@@ -49,7 +49,7 @@ function InitTag() {
         html += '<span class="about-tag-container" id="about-tag-' + i + '"><span class="about-tag">' + arr[i] + '</span></span>';
     }
 
-    $('#aboutpage-divtop').after(html);
+    $('#div-tags').html(html);
 
     for (var i = 0; i < arr.length; i++) {
         $('#about-tag-' + i).fadeIn(GetRandomNum(400, 4000));
