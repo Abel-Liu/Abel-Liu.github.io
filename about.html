@@ -1,12 +1,107 @@
 ---
-layout: simplepage
+layout:
 ---
+<!DOCTYPE html>
+<html>
 
-<div>
-    <div id="aboutpage-divtop" style="text-align:center;">
-        <h1 style="font-size:26px;">About Me</h1>
-    </div>
-    
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Abel's Blog</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Here is my blog include IT articles and essays.">
+    <link rel="canonical" href="http://www.abelliu.com/about/" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.css' />
+    <link rel="stylesheet" href='/css/about.css' />
+    <link rel="stylesheet" href='/css/animate.css' />
+    <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.js"></script>
     <script type="text/javascript" src="/js/about.js"></script>
+</head>
 
-</div>
+<body>
+    <ul id="menu">
+        <li><a href="{{ site.baseurl }}/">Home</a></li>
+    </ul>
+    <div id="fullpage">
+        <div class="section">
+            <div id="aboutpage-divtop" class="about-top">
+                <h1>About Me</h1>
+            </div>
+            <div id="div-tags">
+            </div>
+        </div>
+        <div class="section" id="secskill">
+            <div class="content-split circle-container">
+                <div class="wrap">
+                    <div class="circle-col column">
+                        <div id="s1" class="circle circle-bg1 line1">
+                            <span>.NET</span>
+                        </div>
+                    </div>
+                    <div class="circle-col column">
+                        <div id="s2" class="circle circle-bg1 line1">
+                            <span>MS SQL</span>
+                        </div>
+                    </div>
+                    <div class="circle-col column">
+                        <div class="circle circle-bg1 line1">
+                            <span>Python</span>
+                        </div>
+                    </div>
+                    <div class="circle-col column">
+                        <div class="circle circle-bg1 line1">
+                            <span>Django</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="circle-col column col21">
+                        <div class="circle circle-bg1 line2">
+                            <span>JS</span>
+                        </div>
+                    </div>
+                    <div class="circle-col column">
+                        <div class="circle circle-bg1 line2">
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                    <div class="circle-col column">
+                        <div class="circle circle-bg1 line2">
+                            <span>jQuery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="seclife">
+            <div class="content-split">
+                <div class="wrap">
+                    <div class="content-col-1 column">
+                        <img id="l1" data-src="/r/me/1.jpg">
+                    </div>
+                    <div class="content-col-1 column">
+                        <img id="l2" data-src="/r/me/2.jpg">
+                    </div>
+                    <div class="content-col-1 column">
+                        <img id="l3" data-src="/r/me/6.jpg">
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="content-col-1 column">
+                        <img id="l7" data-src="/r/me/4.jpg">
+                    </div>
+                    <div class="content-col-1 column">
+                        <img id="l8" data-src="/r/me/5.jpg">
+                    </div>
+                    <div class="content-col-1 column">
+                        <img id="l9" data-src="/r/me/3.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

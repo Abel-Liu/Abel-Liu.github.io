@@ -56,16 +56,6 @@ a.backToTop {
 
 a.backToTop:hover { opacity: .7; }
 
-.about-tag-container {
-    display: none;
-}
-.about-tag{
-  border: 1px solid #ebebeb;
-  padding: 2px 5px;
-  display: inline-block;
-  margin: 0 0 9px 5px;
-}
-
 /* Base */
 /* ----------------------------------------------------------*/
 
