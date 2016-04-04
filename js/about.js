@@ -3,20 +3,24 @@ _responsiveWidth = 600;
 $(document).ready(function() {
     $('#fullpage').fullpage({
         sectionsColor: ['#e67e22', '#4BBFC3', '#22C3E6'],
-        anchors: ['tag', 'secondPage', 'life'],
+        anchors: ['tag', 'skill', 'life'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['Tag', 'Second page', 'Life'],
+        navigationTooltips: ['Tag', 'Skill', 'Life'],
         responsiveWidth: _responsiveWidth,
         //scrollOverflow: true,
 
         afterLoad: function(anchorLink, index) {
-            if (index == 3) {
+            if (index == 2) {
+                InSkill();
+            } else if (index == 3) {
                 InLife();
             }
         },
         onLeave: function(index, nextIndex, direction) {
-            if (index == 3) {
+            if (index == 2) {
+                OutSkill();
+            } else if (index == 3) {
                 OutLife();
             }
         }
@@ -26,6 +30,7 @@ $(document).ready(function() {
 
     $(window).resize(function() {
         SetPhotoSize();
+        SetSkill();
     });
 
     InitTag();
@@ -55,6 +60,21 @@ function GetRandomNum(Min, Max) {
     var Range = Max - Min;
     var Rand = Math.random();
     return (Min + Math.round(Rand * Range));
+}
+
+function InSkill() {
+    if (document.body.clientWidth < _responsiveWidth)
+        return;
+
+    $(".line2").addClass('animated fadeInUp');
+    $(".line1").addClass('animated2 fadeInUp');
+}
+
+function OutSkill() {
+    $(".line2").removeClass('animated fadeInUp');
+    $(".line1").removeClass('animated2 fadeInUp');
+
+    $(".circle").css('opacity', document.body.clientWidth < _responsiveWidth ? 1 : 0);
 }
 
 function InLife() {
@@ -93,4 +113,9 @@ function SetPhotoSize() {
         if ($(".section.active")[0].id == "seclife")
             $(".wrap img").css('opacity', 1);
     }
+}
+
+function SetSkill() {
+    if ($(".section.active")[0].id == "secskill")
+        $(".circle").css('opacity', 1);
 }
