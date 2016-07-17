@@ -14,7 +14,7 @@ description:
 IFilterProvider起到控制所有过滤器的作用，如下
 
 <div style="text-align: center;">
-    <img src="/r/webapifilterprovider.jpg" border="0" alt="webapifilterprovider">
+    <img class="onerow-imgfix" src="/r/webapifilterprovider.jpg" border="0" alt="webapifilterprovider">
 </div>
 
 * 假设我们有一个授权验证过滤器

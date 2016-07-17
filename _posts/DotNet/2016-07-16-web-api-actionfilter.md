@@ -12,7 +12,7 @@ description:
 ActionFilterAttribute顾名思义是过滤API请求，可应用于Controller或Action，OnActionExecuting和OnActionExecuted两个方法可在操作执行之前和之后被调用，通过写自己的ActionFilter可实现API请求过滤、验证、记日志等。API请求的执行顺序：
 
 <div style="text-align: center;">
-    <img src="/r/webapirequest.jpg" border="0" alt="webapirequest">
+    <img class="onerow-imgfix" src="/r/webapirequest.jpg" border="0" alt="webapirequest">
 </div>
 
 * 首先定义一个过滤器：
