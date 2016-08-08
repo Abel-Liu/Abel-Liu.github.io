@@ -44,6 +44,10 @@
 	                location.href = '/about';
 	                return;
 	            }
+                if (anchor == 'readingcloud') {
+                    location.href = '/readingcloud';
+                    return;
+                }
 	            
 	            var el = $('#' + anchor);
 	            var nav = $('.site-header');
