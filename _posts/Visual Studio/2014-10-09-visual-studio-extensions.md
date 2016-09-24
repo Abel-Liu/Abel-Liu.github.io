@@ -19,9 +19,6 @@ tags: [vs]
 <li><a href="https://visualstudiogallery.msdn.microsoft.com/872d27ee-38c7-4a97-98dc-0d8a431cc2ed" target="_blank">JScript Editor Extensions</a> (2010)
 </li>
 
-<li>Indent Guides (<a href="http://indentguide.codeplex.com/releases/view/110312" target="_blank">2010</a>,<a href="https://visualstudiogallery.msdn.microsoft.com/e792686d-542b-474a-8c55-630980e72c30" target="_blank">2012&2013</a>)
-</li>
-
 <li>C# outline (<a href="https://visualstudiogallery.msdn.microsoft.com/4d7e74d7-3d71-4ee5-9ac8-04b76e411ea8" target="_blank">2010</a>,<a href="https://visualstudiogallery.msdn.microsoft.com/6c3c5dec-1534-4c42-81b1-cfd4615fd0e9" target="_blank">2013</a>)
 </li>
 <br />
