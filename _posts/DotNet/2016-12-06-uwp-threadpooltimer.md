@@ -2,7 +2,7 @@
 layout: post
 title:  "Windows通用程序（UWP）中的定时器"
 date:   2016-12-06 12:00:00
-categories: dotnet
+categories: [dotnet, uwp]
 tags: [uwp, timer, thread, threadpool]
 description: 
 ---
