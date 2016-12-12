@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<div class="home">
+    <h1><i>All tags</i></h1>
+    <ul class="posts">
+        {% for t in site.tags %}
+        <a class="cat-tag" href="/tag/{{t[0]}}">{{t[0]}}({{t[1].size}})</a>
+        {% endfor %}
+    </ul>
+</div>

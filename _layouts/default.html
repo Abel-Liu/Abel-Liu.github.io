@@ -38,22 +38,33 @@
                         <div class="category-header">Categories</div>
                         <hr />
                         <ul class="category-panel">
-                            {% for c in site.categories %}
+                            {% for c in site.categories limit:20 %}
                             <li>
                                 <a class="category-link" href="/cat/{{c[0]}}/">{{c[0]}}({{c[1].size}})</a>
                             </li>
                             {% endfor %}
                         </ul>
+                        {% if site.categories.size>20 %}
+                        <div style="text-align: right;">
+                            <a href="/categories">more...</a>
+                        </div>
+                        {% endif %}
                     </div>
 
                     <div id="tag" class="sidebar">
                         <div class="category-header">Tags</div>
                         <hr />
                         <div style="margin-top: 10px;">
-                            {% for t in site.tags %}
+                            {% for t in site.tags limit:40 %}
                             <a class="cat-tag" href="/tag/{{t[0]}}">{{t[0]}}({{t[1].size}})</a>
                             {% endfor %}
                         </div>
+
+                        {% if site.tags.size>40 %}
+                        <div style="text-align: right;">
+                            <a href="/tags">more...</a>
+                        </div>
+                        {% endif %}
                     </div>
 
                     <div id="qr" class="sidebar" style="background:none;">
