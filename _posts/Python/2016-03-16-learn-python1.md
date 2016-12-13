@@ -69,6 +69,16 @@ hello Jim
 
 Python中布尔值用True、False表示，布尔值的运算用and、or、not
 
+```
+>>> r = True
+>>> r and False
+False
+>>> r or False
+True
+>>> not r
+False
+```
+
 * 将代码保存为文件
 
 将以下代码保存为first.py，命令行进入文件所在目录，输入<code>python first.py</code>运行
