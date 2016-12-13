@@ -72,7 +72,7 @@ list中的元素类型可以不同，甚至可以包含另一个list
 
 * tuple
 
-Python中的另一种列表，和list相似，唯一不同的是tuple一旦初始化就不能改变，但可以用索引取值，下方例子给items赋值会报错
+Python中的另一种列表，和list相似，唯一不同的是tuple一旦初始化就不能改变，但可以用索引取值，tuple使用`小括号()`来包裹元素。下方例子给items赋值会报错
 
 ```python
 >>> items = ('a', 'b', 'c')
