@@ -3,7 +3,7 @@ layout: post
 title:  "ShadowSocks使用教程"
 date:   2016-12-14 11:00:00
 categories: it
-tags: [shadowsocks ]
+tags: [shadowsocks, SwitchyOmega]
 description: 
 ---
 
