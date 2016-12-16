@@ -10,13 +10,13 @@ description:
 
 * list
 
-Python内置的列表类型，好玩的是可以用负的索引倒着取值
+Python内置的列表类型，好玩的是可以用负的索引倒着取值（索引0是第一个元素，-1是最后一个元素，-2是倒数第二个）
 
 ```python
 items = ['a', 'b', 'c']
 print('all items: %s' % items)
 print('length is %d' % len(items))
-print('first: %s' % items[1])
+print('first: %s' % items[0])
 print('last: %s' % items[-1])
 ```
 
@@ -24,7 +24,7 @@ print('last: %s' % items[-1])
 D:\>python hello.py
 all items: ['a', 'b', 'c']
 length is 3
-first: b
+first: a
 last: c
 ```
 
