@@ -20,7 +20,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-* print() 打印，使用<code>,</code>连接字符串
+* print() 打印，使用<code>,</code>输入多个字符串参数，一起打印；`+`连接字符串
 
 ```
 >>> print('hello world')
@@ -29,6 +29,8 @@ hello world
 hello Jim Green
 >>> print(100 + 200)
 300
+>>> print('hello ' + 'world')
+hello world
 ```
 
 
