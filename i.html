@@ -1,0 +1,31 @@
+--- 
+layout: 
+---
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Text converter</title>
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $("#btnGo").click(function() {
+            $("#divContent").html($("#txtInput").val());
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div style="padding: 20px;">
+        <textarea id="txtInput" rows="10" style="width: 100%;"></textarea>
+        <br/>
+        <input type="button" id="btnGo" value="Show" style="margin: 10px 0 10px 0;width: 70px;height: 30px;" />
+        <div id="divContent" style=""></div>
+    </div>
+</body>
+
+</html>
