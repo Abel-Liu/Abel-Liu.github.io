@@ -1,12 +1,14 @@
 ---
 layout: post
 title:  ".Net Core项目输出设置"
-date:   2017-03-07 10:00:00
+date:   2017-03-07 16:00:00
 categories: [dotnet, dotnet core]
 tags: [dotnet, core, project, output]
 description: 
 ---
 <!--more-->
+
+**升级到VS2017后项目配置改回了csproj，用不到此配置了。。**
 
 * 在.Net Core编译时拷贝文件到输出目录。
 
@@ -43,8 +45,10 @@ copyToOutput中的内容会复制到输出目录，即bin下的相关目录。``
 这时编译出的文件名为 your name.dll 。
 
 
-完整配置参考：
+完整配置：
 
 <div style="text-align: center;">
 <img class="onerow-imgfix" src="/r/project.json.jpg" border="0" alt="project.json"/>
 </div>
+
+参考：[https://docs.microsoft.com/en-us/dotnet/articles/core/tools/project-json](https://docs.microsoft.com/en-us/dotnet/articles/core/tools/project-json)
