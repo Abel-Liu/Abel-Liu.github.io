@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  ".Net Core使用配置文件"
-date:   2017-03-08 10:00:00
+date:   2017-03-07 20:00:00
 categories: [dotnet, dotnet core]
 tags: [dotnet, core, configuration]
 description: 
