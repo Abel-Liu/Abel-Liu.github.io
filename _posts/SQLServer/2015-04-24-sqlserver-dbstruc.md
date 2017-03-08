@@ -13,7 +13,7 @@ description: 使用SQL语句获取数据库的结构信息
 <img class="onerow-imgfix" src="http://i1373.photobucket.com/albums/ag384/abel_liu/GitHub/dbstruc_zpsdhzbewsv.jpg" border="0" alt="dbstru"/>
 </div>
 
-{% highlight mysql %}
+```sql
 SELECT
     (CASE WHEN C.column_id = 1 THEN O.name ELSE N'' END) as TableName,
     C.name as ColumnName,
@@ -38,4 +38,4 @@ FROM sys.columns C
             AND C.[object_id] = PFD.major_id 
             AND C.column_id = PFD.minor_id
 ORDER BY O.name, C.column_id
-{% endhighlight %}
+```

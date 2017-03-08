@@ -25,7 +25,7 @@ SELECT * FROM [fn_split_str]('aa,bb,cc,,dd', ',', 1)
 
 完整代码
 
-{% highlight mysql %}
+```sql
 ALTER FUNCTION [dbo].[fn_split_str]
 (
     @Input NVARCHAR(MAX),            --要分割的文本
@@ -63,4 +63,4 @@ BEGIN
 
     RETURN
 END
-{% endhighlight %}
+```

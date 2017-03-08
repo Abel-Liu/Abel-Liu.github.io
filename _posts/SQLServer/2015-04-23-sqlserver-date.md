@@ -12,19 +12,19 @@ description:
 
 ##### 1 获取上个周日是哪天
 
-        {% highlight mysql %}
-        SELECT DATEADD(DAY, -(@@DATEFIRST + DATEPART(WEEKDAY, GETDATE()) - 1) % 7, GETDATE())
-        {% endhighlight %}
+```sql
+SELECT DATEADD(DAY, -(@@DATEFIRST + DATEPART(WEEKDAY, GETDATE()) - 1) % 7, GETDATE())
+```
 
 ##### 2 获取某天是星期几，因为SQL Server的区域设置不同，或手动更改了@@DATEFIRST值，获取到的星期是不一样的，所以用以下方式可以绝对获取到正确值
 
-        {% highlight mysql %}
-        SELECT (DATEPART(WEEKDAY, '2015-4-23') + @@DATEFIRST - 1) % 7
-        {% endhighlight %}
+```sql
+SELECT (DATEPART(WEEKDAY, '2015-4-23') + @@DATEFIRST - 1) % 7
+```
 
 ##### 3 获取一段时间内的工作日数（包含开始日期和结束日期）
 
-        {% highlight mysql %}
+```sql
 CREATE FUNCTION get_weekday_count
 (
 	@start_time VARCHAR(20),
@@ -43,4 +43,4 @@ BEGIN
 	END
 	RETURN @result
 END
-        {% endhighlight %}
+```
