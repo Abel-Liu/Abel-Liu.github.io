@@ -555,7 +555,7 @@ a.page-link:hover {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .about-tag{
     border: 1px solid #ebebeb;
     padding: 2px 5px;
