@@ -513,6 +513,20 @@ a.page-link:hover {
 
 /* media queries */
 /* ----------------------------------------------------------*/
+@media screen and (max-width: 950px) {
+  .paging-num-head {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .content-split .column {
+    float: none;
+    clear: both;
+    width: auto;
+    margin: 0 0 15px; 
+  }
+}
 
 @media screen and (max-width: 750px) {
 
@@ -533,20 +547,21 @@ a.page-link:hover {
     clear: both;
   }
 
-  .content-split .column {
-    float: none;
-    clear: both;
-    width: auto;
-    margin: 0 0 15px; }
+}
+
+@media screen and (max-width: 630px) {
+  .paging-num-not-current{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
-.about-tag{
-  border: 1px solid #ebebeb;
-  padding: 2px 5px;
-  display: inline-block;
-  margin: 0 0 1px 5px;
-}
+  .about-tag{
+    border: 1px solid #ebebeb;
+    padding: 2px 5px;
+    display: inline-block;
+    margin: 0 0 1px 5px;
+  }
 
   .wrap { padding: 0 12px; }
   .home { padding: 15px;}
