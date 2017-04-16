@@ -178,7 +178,7 @@ firewall-cmd --reload
 
 现在我们是在shell中执行dotnet命令来启动网站，如果shell关闭网站也就停止了，所以我们需要创建一个服务来启动网站，而且可以开机启动。先创建一个服务文件。
 
-***不会使用vi编辑器的自行百度，稍后我也会写一个vi的教程。***
+vi编辑器的使用方法参考我的<a href="/linux/2017/03/29/vim/" target="_blank" >另一篇文章</a>。
 
 ```shell
 sudo vi /etc/systemd/system/HelloWorld.service
