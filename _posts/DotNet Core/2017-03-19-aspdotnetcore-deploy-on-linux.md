@@ -66,7 +66,7 @@ public class Program
 }
 ```
 
-第二种方式：使用hosting.json来配置
+第二种方式（**推荐**）：使用hosting.json来配置
 
 在项目中添加hosting.json文件，写入以下内容：
 
@@ -102,6 +102,64 @@ public class Program
 
         host.Run();
     }
+}
+```
+
+第三种方式：使用命令行参数
+
+首先添加```Microsoft.Extensions.Configuration.CommandLine``` Nuget包。
+
+然后在Program中使用：
+
+```csharp
+using Microsoft.Extensions.Configuration;
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        var config = new ConfigurationBuilder()
+        .AddCommandLine(args)
+        .Build();
+
+        var host = new WebHostBuilder()
+            .UseKestrel()
+            .UseContentRoot(Directory.GetCurrentDirectory())
+            .UseIISIntegration()
+            .UseStartup<Startup>()
+            .UseApplicationInsights()
+            .Build();
+
+        host.Run();
+    }
+}
+```
+
+运行时添加参数：```dotnet HelloWorld.dll --server.urls "http://::5001"```
+
+我实际项目中同时用了hosting.json和命令行参数，这样最方便。
+
+```csharp
+public static void Main(string[] args)
+{
+    var configBuilder = new ConfigurationBuilder();
+
+    if (args != null && args.Length > 0)
+        configBuilder.AddCommandLine(args);
+    else
+        configBuilder.AddJsonFile("hosting.json", optional: true);
+
+    var config = configBuilder.Build();
+
+    var host = new WebHostBuilder()
+        .UseKestrel()
+        .UseContentRoot(Directory.GetCurrentDirectory())
+        .UseIISIntegration()
+        .UseStartup<Startup>()
+        .UseConfiguration(config)
+        .Build();
+
+    host.Run();
 }
 ```
 
