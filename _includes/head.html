@@ -27,7 +27,7 @@
 	        });
 
             //scroll via nav
-	        $(document).on('click', '.trigger a', function (event) {
+	        $(document).on('click', '.trigger .nav-item', function (event) {
 	            event.preventDefault();
 
 	            var anchor = $(this).attr('href').substring(1);
@@ -40,14 +40,6 @@
 	                $('#LauncherTranslatePhrase').click();
 	                return;
 	            }
-	            if (anchor == 'about') {
-	                location.href = '/about';
-	                return;
-	            }
-                if (anchor == 'readingcloud') {
-                    location.href = '/readingcloud';
-                    return;
-                }
 	            
 	            var el = $('#' + anchor);
 	            var nav = $('.site-header');

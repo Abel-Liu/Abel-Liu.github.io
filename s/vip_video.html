@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title>vip video</title>
+    <style type="text/css">
+    .list-group-item-sm {
+        padding: 7px 10px !important;
+    }
+    </style>
+    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+</head>
+
+<body>
+    <div style="padding:50px;">
+        <div class="form-inline" style="margin-bottom: 20px;">
+            <div class="form-group col-md-10">
+                <input type="text" class="form-control" style="width: 100%;" autofocus id="txt">
+            </div>
+            <button class="btn btn-default" onclick="go();">Go</button>
+        </div>
+        <div style="padding: 0 15px;">
+            <ul class="list-group" id="result">
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript">
+var urls = [
+    "https://api.47ks.com/webcloud/?v=",
+    "http://api.mp4la.net/?url=",
+    "http://v.72du.com/api/?url=",
+    "http://api.47ks.com/webcloud/?v=",
+    "http://jx.71ki.com/index.php?url=",
+    "http://000o.cc/jx/ty.php?url=",
+    "http://www.yydy8.com/Common/?url=",
+    "http://yun.mt2t.com/yun?url=",
+    "http://api.mp4la.net/?url=",
+    "http://yyygwz.com/index.php?url=",
+    "http://v.72du.com/api/?url=",
+    "http://api.47ks.com/webcloud/?v=",
+    "http://jx.71ki.com/index.php?url=",
+    "http://www.97zxkan.com/jiexi/97zxkanapi.php?url=",
+    "http://www.wmxz.wang/video.php?url=",
+    "http://www.bbshanxiucao.top/video.php?url=",
+    "http://www.xiguaso.com/api/index.php?url=",
+    "http://www.kppev.cn/jiexi/5/1/1.php?url=",
+    "http://api.mp4la.net/?url=",
+    "http://v.72du.com/api/?url=",
+    "http://api.47ks.com/webcloud/?v=",
+    "http://jx.71ki.com/index.php?url=",
+    "http://000o.cc/jx/ty.php?url=",
+    "http://5qiyi.sdyhy.cn/5qiyi/5qiyi2.php?url=",
+    "http://vip.sdyhy.cn/ckflv/?url=",
+    "http://player.gakui.top/?url=",
+    "http://qtzr.net/s/?qt=",
+    "http://www.vipjiexi.com/yun.php?url=",
+
+    "http://apiv.ga/magnet/",
+    "http://apn.zhibo99.cn/mdparse/letv.php?id=",
+    "http://api.baiyug.cn/vip/index.php?url=",
+    "http://977345961.kezi.wang/ykyun/c.php?vid="
+];
+
+$(function() {
+    $("#txt").keypress(function(event) {
+        if (event.keyCode == 13) {
+            go();
+        }
+    });
+});
+
+function go() {
+    $("#result").html("");
+    $.each(urls, function() {
+        var txt = $("#txt").val();
+        $("#result").append('<li class="list-group-item list-group-item-sm"><a target="_blank" href="' + this + txt + '">' + this + txt + '</a></li>');
+    });
+}
+</script>
