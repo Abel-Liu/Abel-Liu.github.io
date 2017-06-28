@@ -19,6 +19,12 @@
             padding: 20px;
         }
     }
+    
+    #txt {
+        width: calc(100% - 55px);
+        float: left;
+        margin-right: 10px;
+    }
     </style>
     <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
@@ -27,7 +33,7 @@
 <body>
     <div class="mcontainer">
         <div style="margin-bottom: 20px;">
-            <input type="text" class="form-control" style="width: 80%;float: left;margin-right: 10px;" autofocus id="txt">
+            <input type="text" class="form-control" autofocus id="txt">
             <button class="btn btn-default" onclick="go();">Go</button>
         </div>
         <div>
