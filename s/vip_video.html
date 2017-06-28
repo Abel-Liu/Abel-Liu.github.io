@@ -21,7 +21,7 @@
     }
     
     #txt {
-        width: calc(100% - 55px);
+        width: calc(100% - 95px);
         float: left;
         margin-right: 10px;
     }
@@ -34,7 +34,10 @@
     <div class="mcontainer">
         <div style="margin-bottom: 20px;">
             <input type="text" class="form-control" autofocus id="txt">
-            <button class="btn btn-default" onclick="go();">Go</button>
+            <div style="">
+                <button class="btn btn-default" onclick="go();">Go</button>
+                <button class="btn btn-danger" onclick="cleartxt();">X</button>
+            </div>
         </div>
         <div>
             <ul class="list-group" id="result">
@@ -95,11 +98,15 @@ function go() {
     if (!txt) {
         return;
     }
-    
+
 
     $.each(urls, function() {
 
         $("#result").append('<li class="list-group-item list-group-item-sm"><a target="_blank" href="' + this + txt + '">' + this + txt + '</a></li>');
     });
+}
+
+function cleartxt() {
+    $("#txt").val('');
 }
 </script>
