@@ -9,20 +9,28 @@
     .list-group-item-sm {
         padding: 7px 10px !important;
     }
+    
+    .mcontainer {
+        padding: 50px;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .mcontainer {
+            padding: 20px;
+        }
+    }
     </style>
     <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
 </head>
 
 <body>
-    <div style="padding:50px;">
-        <div class="form-inline" style="margin-bottom: 20px;">
-            <div class="form-group col-md-10">
-                <input type="text" class="form-control" style="width: 100%;" autofocus id="txt">
-            </div>
+    <div class="mcontainer">
+        <div style="margin-bottom: 20px;">
+            <input type="text" class="form-control" style="width: 80%;float: left;margin-right: 10px;" autofocus id="txt">
             <button class="btn btn-default" onclick="go();">Go</button>
         </div>
-        <div style="padding: 0 15px;">
+        <div>
             <ul class="list-group" id="result">
             </ul>
         </div>
