@@ -91,8 +91,14 @@ $(function() {
 
 function go() {
     $("#result").html("");
+    var txt = $("#txt").val();
+    if (!txt) {
+        return;
+    }
+    
+
     $.each(urls, function() {
-        var txt = $("#txt").val();
+
         $("#result").append('<li class="list-group-item list-group-item-sm"><a target="_blank" href="' + this + txt + '">' + this + txt + '</a></li>');
     });
 }
