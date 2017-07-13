@@ -16,8 +16,13 @@ declare @TableName sysname = 'TableName'
 declare @Result varchar(max) = 'public class ' + @TableName + '
 {'
 
-select @Result = @Result + '
-    public ' + ColumnType + NullableSign + ' ' + ColumnName + ' { get; set; }
+select @Result = @Result + (case when FieldDesc='' then '
+' else '
+    /// <summary>
+    /// ' + FieldDesc + '
+    /// </summary>
+' end)+
+'    public ' + ColumnType + NullableSign + ' ' + ColumnName + ' { get; set; }
 '
 from
 (
@@ -59,10 +64,12 @@ from
             when col.is_nullable = 1 and typ.name in ('bigint', 'bit', 'date', 'datetime', 'datetime2', 'datetimeoffset', 'decimal', 'float', 'int', 'money', 'numeric', 'real', 'smalldatetime', 'smallint', 'smallmoney', 'time', 'tinyint', 'uniqueidentifier') 
             then '?' 
             else '' 
-        end NullableSign
+        end NullableSign,
+        isnull(cast(ext.[value] as varchar(100)),'') FieldDesc
     from sys.columns col
         join sys.types typ on
             col.system_type_id = typ.system_type_id AND col.user_type_id = typ.user_type_id
+        left join sys.extended_properties ext on ext.major_id = col.object_id AND ext.minor_id = col.column_id and ext.name = 'MS_Description'
     where object_id = object_id(@TableName)
 ) t
 order by ColumnId
