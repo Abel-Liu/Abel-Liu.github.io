@@ -36,7 +36,7 @@ public JsonResult Login(UserLogin model)
 
 * 前后端RSA代码
 
-添加Nuget包：```System.Security.Cryptography.Algorithms```、```System.Security.Cryptography.Csp```
+添加Nuget包：System.Security.Cryptography.Algorithms、System.Security.Cryptography.Csp
 
 ```csharp
 using System.Security.Cryptography;
