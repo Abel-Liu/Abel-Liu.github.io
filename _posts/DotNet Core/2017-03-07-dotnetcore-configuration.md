@@ -17,7 +17,18 @@ description:
 
   "subsection": {
     "suboption1": "subvalue1"
-  }
+  },
+
+  "List": [
+    {
+      "name": "name1",
+      "count": 1
+    },
+    {
+      "name": "name2",
+      "count": 2
+    }
+  ]
 }
 ```
 
@@ -53,6 +64,12 @@ namespace ConsoleApp1
             Console.WriteLine($"option1 = {Configuration["option1"]}");
             Console.WriteLine($"option2 = {Configuration["option2"]}");
             Console.WriteLine($"suboption1 = {Configuration["subsection:suboption1"]}");
+
+            var list = Configuration.GetSection("List").GetChildren();
+            foreach(var item in list)
+            {
+                Convert.ToInt32(item["count"]);
+            }
 
             Console.ReadLine();
         }
