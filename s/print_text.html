@@ -10,7 +10,7 @@
     <script>
     $(document).ready(function() {
         $("#btnGo").click(function() {
-            $("#divContent").html($("#txtInput").val());
+            $("#divContent").html($("#txtInput").val().replace(/\n/g,"<br />"));
         });
     });
     </script>
