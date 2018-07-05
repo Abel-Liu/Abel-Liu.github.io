@@ -338,6 +338,58 @@ static RSAUtil()
 }
 ```
 
+**Update**
+
+升级到NET Core 2以后RSAParameters序列化不完全，需要自己改一下序列化的方式，替换上边的 JsonConvert.SerializeObject 和 JsonConvert.DeserializeObject：
+
+```chsarp
+private static string Serialize(RSAParameters parameters)
+{
+    var parasJson = new RSAParametersJson()
+    {
+        Modulus = parameters.Modulus != null ? Convert.ToBase64String(parameters.Modulus) : null,
+        Exponent = parameters.Exponent != null ? Convert.ToBase64String(parameters.Exponent) : null,
+        P = parameters.P != null ? Convert.ToBase64String(parameters.P) : null,
+        Q = parameters.Q != null ? Convert.ToBase64String(parameters.Q) : null,
+        DP = parameters.DP != null ? Convert.ToBase64String(parameters.DP) : null,
+        DQ = parameters.DQ != null ? Convert.ToBase64String(parameters.DQ) : null,
+        InverseQ = parameters.InverseQ != null ? Convert.ToBase64String(parameters.InverseQ) : null,
+        D = parameters.D != null ? Convert.ToBase64String(parameters.D) : null
+    };
+
+    return JsonConvert.SerializeObject(parasJson);
+}
+
+private static RSAParameters Deserialize(string parametersJson)
+{
+    var paramsJson = JsonConvert.DeserializeObject<RSAParametersJson>(parametersJson);
+
+    RSAParameters parameters = new RSAParameters();
+
+    parameters.Modulus = paramsJson.Modulus != null ? Convert.FromBase64String(paramsJson.Modulus) : null;
+    parameters.Exponent = paramsJson.Exponent != null ? Convert.FromBase64String(paramsJson.Exponent) : null;
+    parameters.P = paramsJson.P != null ? Convert.FromBase64String(paramsJson.P) : null;
+    parameters.Q = paramsJson.Q != null ? Convert.FromBase64String(paramsJson.Q) : null;
+    parameters.DP = paramsJson.DP != null ? Convert.FromBase64String(paramsJson.DP) : null;
+    parameters.DQ = paramsJson.DQ != null ? Convert.FromBase64String(paramsJson.DQ) : null;
+    parameters.InverseQ = paramsJson.InverseQ != null ? Convert.FromBase64String(paramsJson.InverseQ) : null;
+    parameters.D = paramsJson.D != null ? Convert.FromBase64String(paramsJson.D) : null;
+    return parameters;
+}
+
+protected class RSAParametersJson
+{
+    public string Modulus { get; set; }
+    public string Exponent { get; set; }
+    public string P { get; set; }
+    public string Q { get; set; }
+    public string DP { get; set; }
+    public string DQ { get; set; }
+    public string InverseQ { get; set; }
+    public string D { get; set; }
+}
+```
+
 至此一切运行正常，Enjoy.
 
 参考：[https://stackoverflow.com/questions/41986995/implement-rsa-in-net-core](https://stackoverflow.com/questions/41986995/implement-rsa-in-net-core)
