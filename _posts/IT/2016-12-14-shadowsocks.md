@@ -100,7 +100,7 @@ Mac版[https://github.com/shadowsocks/shadowsocks-iOS/releases](https://github.c
 </div>
 
 注意情景模式选我们创建的ShadowSocks模式。
-列表网址填：http://guaizi0129-001-site1.itempurl.com/f/gfw.txt
+列表网址填：https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
 
 <div style="text-align: center;">
 <img class="onerow-imgfix" src="/r/ss/ss14.jpg" border="0" alt=""/>
